@@ -1,0 +1,485 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Taskbar Navigation */
+.taskbar {
+  background-color: #fff;
+  border-bottom: 2px solid gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 5px;
+  z-index: 1000;
+}
+
+.taskbar-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.taskbar-item a {
+  text-decoration: none;
+  color: #c00;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.taskbar-item a:hover {
+  color: gold;
+}
+
+/* Home page */
+.home-section {
+  background-color: #fff;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.home-logo {
+  max-width: 550px;
+  height: 400px;
+  margin-top: 0;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  color: #c00;
+  margin-bottom: 10px;
+}
+
+.home-content p {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Membership Cards */
+.membership-section {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.membership-section h2 {
+  font-size: 2.5rem;
+  color: #c00;
+  margin-bottom: 30px;
+}
+
+.membership-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid gold;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #c00;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Join Button Group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+  position: relative;
+  top: -20px;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: gold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #c00;
+  transform: translateY(-2px);
+}
+
+/* Gym Mottos */
+.motto-section {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  font-style: italic;
+  color: #c00;
+  font-size: 1.3rem;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+}
+
+/* About Us Page */
+.about-section {
+  background-color: #fff;
+  padding: 60px 30px;
+  text-align: center;
+  color: #333;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 2.8rem;
+  color: #c00;
+  margin-bottom: 20px;
+}
+
+.about-section h3 {
+  font-size: 1.8rem;
+  color: gold;
+  margin-top: 40px;
+}
+
+.about-section p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.about-list li {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.motto {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #c00;
+  margin-top: 20px;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+  padding: 10px 0;
+}
+
+.about-cta {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+}
+
+/* Shop Section */
+.shop-section {
+  background-color: #fff;
+  border: 2px solid gold;
+  border-radius: 12px 5px;
+  padding: 20px;
+  width: 1308px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+}
+
+.shop-section h2 {
+  font-size: 2.8rem;
+  color: #c00;
+  margin-bottom: 40px;
+}
+
+.shop-category {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.shop-category h3 {
+  font-size: 1.8rem;
+  color: gold;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.shop-category:hover h3 {
+  color: #c00;
+}
+
+.product-list {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 2px solid gold;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  color: #c00;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background-color: gold;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #c00;
+}
+
+/* Collections Page */
+.collections-section {
+  background-color: #fff;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.collections-section h2 {
+  font-size: 2.5rem;
+  color: #c00;
+  margin-bottom: 30px;
+}
+
+.class-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.class-card {
+  background-color: #fff;
+  border: 2px solid gold;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  text-align: center;
+}
+
+.class-card h3 {
+  color: #c00;
+  margin-bottom: 10px;
+}
+
+.class-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Blog Section */
+.blog-section {
+  background-color: #fff;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.blog-section h2 {
+  font-size: 2.8rem;
+  color: #c00;
+  margin-bottom: 10px;
+}
+
+.blog-intro {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.blog-post {
+  background-color: #fff;
+  border: 2px solid gold;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  text-align: left;
+}
+
+.blog-post h3 {
+  color: #c00;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.blog-post a {
+  color: gold;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-post a:hover {
+  color: #c00;
+}
+
+.blog-full {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* signup page */
+.signup-form {
+  max-width: 640px;
+  margin: auto;
+  padding: 20px 45px;
+  border: 2px solid #bfa437;
+  background-color: #fff;
+  font-family: sans-serif;
+  border-radius: 8px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  color: #bfa437;
+}
+
+.signup-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #bfa437;
+}
+
+.signup-form input,
+.signup-form select,
+.signup-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #bfa437;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #c00;
+}
+/* submission page */
+
+.confirmation-message h2 {
+  background-color: #4CAF50;
+  /* Green for success */
+  color: white;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.2;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+  /* soft green glow */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.confirmation-message h2 {
+  animation: pulse 2s infinite;
+}

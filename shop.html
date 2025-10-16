@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>FitHub Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="taskbar">
+    <ul class="taskbar-list">
+      <li class="taskbar-item"><a href="home-page.html">Home</a></li>
+      <li class="taskbar-item"><a href="shop.html">Shop</a></li>
+      <li class="taskbar-item"><a href="collections.html">Collections</a></li>
+      <li class="taskbar-item"><a href="blog.html">Blog</a></li>
+      <li class="taskbar-item"><a href="about-us.html">About Us</a></li>
+    </ul>
+  </nav>
+    <section id="shop" class="shop-section">
+  <h2>Fithub Shop</h2>
+
+  <div class="shop-category" onclick="toggleProducts('clothing')">
+    <h3>Clothing</h3>
+    <div id="clothing" class="product-list">
+        <div class="product-card">
+        <img src="images/skirt-two-piece.jpeg" alt="FitHub Snowy Tennis Set">
+        <h4>The Snowy Tennis Set</h4>
+        <p>This Set will shape your body and your confidence! Breathable and easy to wear.<br> R150</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/long-sleeve-two-piece.jpeg" alt="FitHub Flame Set">
+        <h4>FitHub Flame Set</h4>
+        <p>This Long-sleeve Two-Piece Set is the perfect outfit to have a Baddie Hardcore Session. Aimed at shaping your gluets and boosting your boobs, feel Sexy in this two-piece outfit.<br> R180</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/bra.jpeg" alt="FitHub Empowerment Sports Bra">
+        <h4>The Empowerment Sports Bra</h4>
+        <p>Rebranded in gold with the FitHub logo front and center. It’s bold, breathable, and body-shaping. <br>R60</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/tight-two-piece.jpeg" alt="FitHub Tights Set">
+        <h4>Tight Two-Piece Set</h4>
+        <p>Our sexy, booty shaped Tights Set is perfect for a winter or layed back gym session. <br>R180</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="shop-category" onclick="toggleProducts('skin')">
+    <h3>Skin</h3>
+    <div id="skin" class="product-list">
+      <div class="product-card">
+        <img src="images/tumeric-soap.png" alt="Turmeric Glow Soap">
+        <h4>Turmeric Glow Soap</h4>
+        <p>Brightens and clears skin naturally.<br> R30</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/face-mask.png" alt="Turmeric Face Mask">
+        <h4>Turmeric Face Mask</h4>
+        <p>Removes darkspots and clears skin naturally. <br>R70</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/cucumber-oil.png" alt="Cucumber Skin Oil">
+        <h4>Cucumber Oil</h4>
+        <p>Not only is it safe for your skin, it also Brightens and gives glass-skin. <br>R30</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="shop-category" onclick="toggleProducts('body')">
+    <h3>Body</h3>
+    <div id="body" class="product-list">
+      <div class="product-card">
+        <img src="images/smoothie.png" alt="Berry Protein Smoothie">
+        <h4>Berry Protein Smoothie</h4>
+        <p>Delicious post-workout fuel. <br>R100</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/shake.png" alt="Berry Protein Shake">
+        <h4>Muscle Boost Protein Shake</h4>
+        <p>A Pre-workout fuel that targets your muscles while you break a sweat. <br>R100</p>
+        <button>Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="images/lotion.png" alt="FitHub Berry Lotion">
+        <h4>Berry Scented Lotion</h4>
+        <p>48h Smell, The FitHub Berry Lotion will have you smelling like Sweet Haven after those Hot-Girl Gym Sessions. <br>R80</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hair -->
+    <div class="shop-category" onclick="toggleProducts('hair')">
+      <h3>Hair</h3>
+      <div id="hair" class="product-list">
+        <div class="product-card">
+          <img src="images/growth-serum.png" alt="Growth Hair Serum">
+          <h4>Growth Hair Serum</h4>
+          <p>Strengthens roots and boosts shine. <br>R35</p>
+          <button>Order Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/edge-control.png" alt="Edge Control Gel">
+          <h4>Edge Control Gel</h4>
+          <p>Non-flaky finish with aloe & castor oil.<br> R45</p>
+          <button>Order Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/sweatbands.png" alt="Satin Hair Wrap">
+          <h4>Sweat bands</h4>
+          <p>Protects hair while breaking a sweat. Branded in gold & red. <br>R30</p>
+          <button>Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hygiene -->
+    <div class="shop-category" onclick="toggleProducts('hygiene')">
+      <h3>Hygiene</h3>
+      <div id="hygiene" class="product-list">
+        <div class="product-card">
+          <img src="images/wipes.png" alt="Feminine Wipes">
+          <h4>Feminine Wipes</h4>
+          <p>Gentle, pH-balanced, and travel-friendly. <br>R35</p>
+          <button>Order Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/body-wash.png" alt="Intimate Wash">
+          <h4>Body Wash</h4>
+          <p>Our Coconut-Scented Body wash will leave you smelling like a Tropical Island after your gym routine. <br>R85</p>
+          <button>Order Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/kit.png" alt="Travel Hygiene Kit">
+          <h4>Travel Hygiene Kit</h4>
+          <p>Includes Travel Kit FitHub Bag, wipes, mini lotion & sanitizer. <br> R130</p>
+          <button>Order Now</button>
+        </div>
+      </div>
+    </div>
+</section>
+<script>
+  function toggleProducts(categoryId) {
+    const section = document.getElementById(categoryId);
+    section.style.display = section.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitHub Login</title>
+  <style>
+    /* Root & colors */
+    :root {
+      --primary-color: #FFD700; /* Gold */
+      --accent-color: #C00;     /* Red */
+      --bg-color: #f8f8f8;
+      --text-color: #333;
+      --input-bg: #fff;
+      --input-border: #ccc;
+    }
+    
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #fff, #f0f0f0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Login Container */
+    .login-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      width: 320px;
+      text-align: center;
+    }
+
+    .login-container h1 {
+      color: var(--accent-color);
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    /* Input fields */
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid var(--input-border);
+      border-radius: 8px;
+      background: var(--input-bg);
+      font-size: 16px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .login-container input:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 8px rgba(255,215,0,0.4);
+      outline: none;
+    }
+
+    /* Login Button */
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: var(--primary-color);
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .login-container button:hover {
+      background-color: var(--accent-color);
+      transform: translateY(-2px);
+    }
+
+    /* Feedback message */
+    .login-message {
+      display: none;
+      text-align: center;
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+
+    /* Responsive */
+    @media (max-width: 400px) {
+      .login-container {
+        width: 90%;
+        padding: 30px 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <h1>FitHub Login</h1>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="handleLogin()">Login</button>
+  <div id="loginMessage" class="login-message"></div>
+</div>
+
+<script>
+  // Dummy login logic for front-end demonstration
+  function handleLogin() {
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const messageDiv = document.getElementById('loginMessage');
+
+    if(username === "user" && password === "password123") {
+      messageDiv.textContent = "✅ Successfully logged in, welcome back!";
+      messageDiv.className = "login-message success";
+    } else {
+      messageDiv.textContent = "❌ Invalid username or password.";
+      messageDiv.className = "login-message error";
+    }
+    messageDiv.style.display = "block";
+
+    // Hide message after 3 seconds
+    setTimeout(() => {
+      messageDiv.style.display = "none";
+    }, 3000);
+  }
+</script>
+
+</body>
+</html>

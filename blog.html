@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>FitHub Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="taskbar">
+    <ul class="taskbar-list">
+      <li class="taskbar-item"><a href="home-page.html">Home</a></li>
+      <li class="taskbar-item"><a href="shop.html">Shop</a></li>
+      <li class="taskbar-item"><a href="collections.html">Collections</a></li>
+      <li class="taskbar-item"><a href="blog.html">Blog</a></li>
+      <li class="taskbar-item"><a href="about-us.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="blog" class="blog-section">
+    <h2>FitHub Voices</h2>
+    <p class="blog-intro">Stories, tips, and empowerment from the women who lift, stretch, and glow with us.</p>
+
+    <div class="blog-grid">
+      <article class="blog-post">
+        <h3>Why Women Deserve Their Own Gym</h3>
+        <p>Explore how FitHub creates a judgment-free zone for every woman’s journey.</p>
+        <button onclick="toggleArticle('article1')">Read More</button>
+        <div id="article1" class="blog-full" style="display:none;">
+          <p>Women-only gyms like FitHub offer a safe, supportive space where women can train without fear of judgment or discomfort. From avoiding “gymtimidation” to respecting cultural modesty, these spaces prioritize privacy, comfort, and confidence. FitHub tailors workouts to the female body — addressing hormonal shifts, pelvic floor strength, and fat distribution — while fostering community and empowerment through shared goals and sisterhood.</p>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <h3>5 Empowering Gym Outfits That Boost Confidence</h3>
+        <p>From crop tops to compression leggings — dress for your goals, not for the gaze.</p>
+        <button onclick="toggleArticle('article2')">Read More</button>
+        <div id="article2" class="blog-full" style="display:none;">
+          <p>Confidence starts with comfort. FitHub’s EmpowerFit Leggings are high-waisted and squat-proof, designed to support movement and curves. Pair them with our Confidence Crop Tops — breathable and flattering — or throw on a Zone Hoodie for post-workout ease. Add branded socks and headbands for that signature touch. These outfits aren’t just stylish — they’re functional, feminine, and made to move with you.</p>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <h3>Turmeric & Cucumber: Skincare That Works Post-Workout</h3>
+        <p>Why our golden duo is perfect for your glow-up routine after a sweat session.</p>
+        <button onclick="toggleArticle('article3')">Read More</button>
+        <div id="article3" class="blog-full" style="display:none;">
+          <p>Post-workout skin deserves TLC. Our Turmeric Glow Soap helps reduce inflammation and brighten dull skin, while the Cucumber Oil Serum hydrates and promotes a glass-skin finish. These ingredients are gentle, natural, and effective — perfect for women who want to glow without harsh chemicals. FitHub’s skincare line is designed to refresh, restore, and radiate confidence.</p>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <h3>Stretch, Breathe, Reclaim: Yoga for Every Body</h3>
+        <p>How FitHub’s yoga classes help women reconnect with their rhythm and strength.</p>
+        <button onclick="toggleArticle('article4')">Read More</button>
+        <div id="article4" class="blog-full" style="display:none;">
+          <p>Yoga at FitHub isn’t about perfection — it’s about presence. Our Empowerment Yoga classes blend breathwork, gentle stretching, and strength-building poses that honor the female body. Whether you’re healing, growing, or simply showing up, these sessions help you reclaim your rhythm and reconnect with your power. It’s movement with meaning, in a space that celebrates every woman’s journey.</p>
+        </div>
+      </article>
+
+      <article class="blog-post">
+  <h3>How FitHub Boosts Mental Wellness Through Movement</h3>
+  <p>Exercise isn’t just physical — it’s emotional, too. Here’s how we help women feel stronger inside and out.</p>
+  <button onclick="toggleArticle('article5')">Read More</button>
+  <div id="article5" class="blog-full" style="display:none;">
+    <p>At FitHub, we believe movement is medicine. Our classes are designed to reduce stress, boost endorphins, and create a sense of emotional safety. Whether it’s lifting weights in Strength & Sisterhood or flowing through Yoga for Empowerment, every session is a chance to reconnect with your body and quiet the noise. We also encourage journaling, breathwork, and post-class reflection — because mental wellness deserves just as much attention as physical gains.</p>
+  </div>
+</article>
+
+<article class="blog-post">
+  <h3>Creating a Signature Look: FitHub’s Branding Philosophy</h3>
+  <p>Why our red, gold, and white palette speaks to strength, softness, and sisterhood.</p>
+  <button onclick="toggleArticle('article6')">Read More</button>
+  <div id="article6" class="blog-full" style="display:none;">
+    <p>FitHub’s branding isn’t just aesthetic — it’s intentional. Red symbolizes power and passion, gold reflects warmth and achievement, and white represents clarity and comfort. Together, they create a visual identity that’s bold, feminine, and inclusive. From our product packaging to our gym interiors, every detail is designed to make women feel seen, celebrated, and stylish. It’s not just a look — it’s a lifestyle.</p>
+  </div>
+</article>
+    </div>
+  </section>
+
+  <script>
+    function toggleArticle(id) {
+      const article = document.getElementById(id);
+      article.style.display = article.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
